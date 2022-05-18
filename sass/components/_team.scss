@@ -1,6 +1,6 @@
 .team{
     @extend %section_p;
-    border-color: $team-backgound;
+    background-color: $team-backgound;
 }
 .team__title{
     text-align: center;
