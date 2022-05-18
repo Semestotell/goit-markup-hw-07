@@ -1,0 +1,16 @@
+.logo{
+    color: $logo-color;
+}
+.link-logo{
+    display: block;
+    font-family: 'Releway';
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    color: $logo-link-color;
+    text-decoration: none;
+    &:hover,
+    &:active{
+        text-decoration: none;
+    }
+}

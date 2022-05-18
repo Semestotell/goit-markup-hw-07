@@ -1,0 +1,33 @@
+.info{
+    padding-top: 94px;
+}
+.info__list{
+    display: flex;
+    @extend %list
+}
+.info__item{
+    max-width: 270px;
+    &:not(:first-child){
+        margin-left: 30px;
+    }
+}
+.card-picture{
+    width: 270px;
+    height: 120px;
+    @include centeredFlex;
+    background-color:#f5f4fa;
+    margin-bottom: 30px;
+}
+.info__point{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    font-weight: 700;
+}
+.info__description{
+    margin: 0;
+    line-height: 1.71;
+    color: $paragraph-color;
+}
+

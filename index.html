@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -79,15 +79,15 @@
                   <use href="./images/icons.svg#icon-e-mail"></use>
                 </svg>
               </div>
-              <div class="comment-field">
-                <label for="comm" class="modal-label">Коментарий</label>
-                  <textarea name="comment" id="comm" placeholder="Введите текст" class="modal-input"></textarea>
+              <div class="comment__field">
+                <label for="comm" class="comment__label">Коментарий</label>
+                  <textarea name="comment" id="comm" placeholder="Введите текст" class="comment__input"></textarea>
               </div>
-                <label class="label-checkbox">
-                  <input type="checkbox" name="treaty" class="check-input">
-                  <span class="icon"></span>
-                  <span class="checkbox-title">Соглашаюсь с рассылкой и принимаю </span>
-                  <a href="#" class="checkbox-link">Условия договора</a>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="treaty" class="checkbox-label__input">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="checkbox-label__title">Соглашаюсь с рассылкой и принимаю </span>
+                  <a href="#" class="checkbox-label__link">Условия договора</a>
                 </label>
               <button type="submit" class="form-button">Отправить</button>
             </form>
@@ -334,7 +334,7 @@
       </section>
       <section class="clients">
         <div class="container">
-        <h2 class="clients-title">Постоянные клиенты</h2>
+        <h2 class="clients__title">Постоянные клиенты</h2>
         <ul class="clients-list">
           <li class="clients-list__item">
             <a href="./" class="clients-list__link">

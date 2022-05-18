@@ -1,0 +1,105 @@
+.header{
+    border-bottom: 1px solid #ececec;
+}
+.header-list-contacts{
+    color: #000;
+}
+.header-link-now{
+    position: relative;
+    display: block;
+    padding:32px 0 32px 0;
+    text-decoration: none;
+    color: $header-link-active;
+    line-height: 1.14;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    &:active,
+    &:visited{
+        text-decoration: none;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $header-link-active;
+    }
+}
+.header-navigation-link{
+    display: block;
+    padding: 32px 0;
+    color: $header-navigation-color;
+    line-height: 1.14;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:active,
+    &:visited{
+        text-decoration: none;
+    }
+    &:hover,
+    &:focus{
+        color: $hover-color;
+    }
+}
+.main-nav{
+    display: flex;
+}
+.main-nav-list{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+}
+.site-nav__item{
+    @extend %list;
+    &:first-child{
+        margin-left: 93px
+    }
+    &:not(:last-child){
+        margin-right: 50px
+    }
+}
+.auth-nav{
+    @include centeredFlex;
+    margin: 0;
+    padding-left: 0;
+    margin-left: auto;
+}
+.auth-nav .item{
+    @extend %list;
+    &:not(:first-child){
+        margin-left: 50px;
+    }
+}
+.header-contacts{
+    @include centeredFlex;
+    padding: 32px 0;
+    line-height: 1.14;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 00.02em;
+    color: $contacts-color;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:active,
+    &:visited{
+        text-decoration: none;
+    }
+    &:hover{
+        color: $hover-color;
+        fill: currentColor;
+    }
+}
+.mail,
+.phone{
+    margin-right: 10px;
+}
