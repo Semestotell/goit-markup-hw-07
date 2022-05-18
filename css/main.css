@@ -29,7 +29,7 @@ body {
   overflow: hidden;
 }
 
-.site-nav__item, .auth-nav .item, .info__list, .studio__list, .team__list, .soc-list, .clients-list, .filter, .projects, .footer-address-list, .foot-soc-list {
+.site-nav__item, .auth-nav .item, .info__list, .studio__list, .team__list, .soc-list, .clients-list, .filter, .projects, .foot-soc-list {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -51,7 +51,7 @@ body {
 
 .link-logo {
   display: block;
-  font-family: 'Releway';
+  font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
@@ -560,6 +560,7 @@ body {
   margin: 0;
   padding-top: 0;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .job-card__overlay {
@@ -820,6 +821,10 @@ body {
           transform: translate(0);
 }
 
+.market__image {
+  display: block;
+}
+
 .market__list {
   padding: 20px 24px;
 }
@@ -890,7 +895,7 @@ body {
 .footer-link-logo {
   display: block;
   margin-bottom: 20px;
-  font-family: 'Releway';
+  font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
@@ -902,7 +907,13 @@ body {
   text-decoration: none;
 }
 
-.footer-address-list.item:not(:last-child) {
+.footer-address-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-address-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
 

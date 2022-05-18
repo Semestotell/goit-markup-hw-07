@@ -9,7 +9,7 @@
 .footer-link-logo{
     display: block;
     margin-bottom: 20px;
-    font-family: 'Releway';
+    font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
@@ -21,12 +21,12 @@
     }
 }
 .footer-address-list{
-    @extend %list
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-.footer-address-list{
-    &.item:not(:last-child){
-        margin-bottom: 9px;
-    }
+.footer-address-list .item:not(:last-child){
+    margin-bottom: 9px;
 }
 .footer-contacts{
     line-height: 1.14;
